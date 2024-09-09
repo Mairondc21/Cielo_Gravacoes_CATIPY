@@ -49,8 +49,10 @@ def executar_arquivo_bat(caminho_bat, caminho_diretorio):
         print(f"Erro ao executar o arquivo .bat: {e}")
 
 
-caminho_da_pasta_principal = r"C:\Users\mairon.costa\OneDrive - Expertise Inteligência e Pesquisa de Mercado\expertise_mairon\2024\Audio_Cortes\teste"
-renomear_arquivos_mp3(caminho_da_pasta_principal)
+if __name__ == "__main__" :
 
-caminho_arquivo_bat = r"C:\Users\mairon.costa\OneDrive - Expertise Inteligência e Pesquisa de Mercado\expertise_mairon\2024\Audio_Cortes\teste\Script.bat"
-executar_arquivo_bat(caminho_arquivo_bat, caminho_da_pasta_principal)
+    caminho_da_pasta_principal = r'C:\Users\mairon.costa\OneDrive - Expertise Inteligência e Pesquisa de Mercado\expertise_mairon\2024\Audio_Cortes\Joao\Input\Remessa 2\2024-09-09'
+    renomear_arquivos_mp3(caminho_da_pasta_principal)
+
+    caminho_arquivo_bat = r'C:\Users\mairon.costa\OneDrive - Expertise Inteligência e Pesquisa de Mercado\expertise_mairon\2024\Audio_Cortes\Joao\Input\Remessa 2\2024-09-09\Script.bat'
+    executar_arquivo_bat(caminho_arquivo_bat, caminho_da_pasta_principal)
